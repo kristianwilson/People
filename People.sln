@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People", "People\People.csproj", "{AEC068A0-23DF-49CE-92D2-D895281C5945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Tests", "People.Tests\People.Tests.csproj", "{36739A28-E5C4-48CF-B7E0-91F739E1BA96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Core", "People.Core\People.Core.csproj", "{0E158636-FB9E-4744-9A4E-E1CD34DB5C36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{366285BA-113D-4F7B-9001-ADABA4B872D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D688B55E-75AF-4DFC-BF1D-7C0D5EEE3856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastructure", "People.Infrastructure\People.Infrastructure.csproj", "{ADADD750-26AB-4874-B904-1EE62C362295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastucture.Data", "People.Infrastucture.Data\People.Infrastucture.Data.csproj", "{B4151F22-CB7D-4A08-97FF-E77C3F009676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastructure.DependencyInjection", "People.Infrastructure.DependencyInjection\People.Infrastructure.DependencyInjection.csproj", "{A3282397-46E4-43B5-81CB-9AAF75C93683}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC068A0-23DF-49CE-92D2-D895281C5945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC068A0-23DF-49CE-92D2-D895281C5945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC068A0-23DF-49CE-92D2-D895281C5945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC068A0-23DF-49CE-92D2-D895281C5945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36739A28-E5C4-48CF-B7E0-91F739E1BA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36739A28-E5C4-48CF-B7E0-91F739E1BA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36739A28-E5C4-48CF-B7E0-91F739E1BA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36739A28-E5C4-48CF-B7E0-91F739E1BA96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E158636-FB9E-4744-9A4E-E1CD34DB5C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E158636-FB9E-4744-9A4E-E1CD34DB5C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E158636-FB9E-4744-9A4E-E1CD34DB5C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E158636-FB9E-4744-9A4E-E1CD34DB5C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADADD750-26AB-4874-B904-1EE62C362295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADADD750-26AB-4874-B904-1EE62C362295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADADD750-26AB-4874-B904-1EE62C362295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADADD750-26AB-4874-B904-1EE62C362295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4151F22-CB7D-4A08-97FF-E77C3F009676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4151F22-CB7D-4A08-97FF-E77C3F009676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4151F22-CB7D-4A08-97FF-E77C3F009676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4151F22-CB7D-4A08-97FF-E77C3F009676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3282397-46E4-43B5-81CB-9AAF75C93683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3282397-46E4-43B5-81CB-9AAF75C93683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3282397-46E4-43B5-81CB-9AAF75C93683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3282397-46E4-43B5-81CB-9AAF75C93683}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E158636-FB9E-4744-9A4E-E1CD34DB5C36} = {366285BA-113D-4F7B-9001-ADABA4B872D9}
+		{ADADD750-26AB-4874-B904-1EE62C362295} = {D688B55E-75AF-4DFC-BF1D-7C0D5EEE3856}
+		{B4151F22-CB7D-4A08-97FF-E77C3F009676} = {D688B55E-75AF-4DFC-BF1D-7C0D5EEE3856}
+		{A3282397-46E4-43B5-81CB-9AAF75C93683} = {D688B55E-75AF-4DFC-BF1D-7C0D5EEE3856}
+	EndGlobalSection
+EndGlobal

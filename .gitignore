@@ -1,0 +1,14 @@
+*.nupkg
+*.dll
+packages/AutoMapper.3.3.1/lib/MonoAndroid/AutoMapper.Android.pdb
+/packages
+/People.Core/bin/Debug
+/People.Core/obj/Debug
+/People.Infrastructure/bin/Debug
+/People.Infrastructure/obj/Debug
+/People.Infrastructure.DependencyInjection/bin/Debug
+/People.Infrastructure.DependencyInjection/obj/Debug
+/People.Infrastucture.Data/bin/Debug
+/People.Infrastucture.Data/obj/Debug
+/People.Tests/bin/Debug
+/People.Tests/obj/Debug
