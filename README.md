@@ -1,1 +1,1 @@
-# Peope
+# People
