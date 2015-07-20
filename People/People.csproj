@@ -38,12 +38,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoMapper.Net4">
-      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SimpleInjector">
       <HintPath>..\packages\SimpleInjector.2.8.0\lib\net45\SimpleInjector.dll</HintPath>
@@ -99,7 +93,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\FullPerson.cs" />
+    <Compile Include="Mapping\PersonModelMapper.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\PersonWithHistory.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -128,9 +124,9 @@
       <Project>{adadd750-26ab-4874-b904-1ee62c362295}</Project>
       <Name>People.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\People.Infrastucture.Data\People.Infrastucture.Data.csproj">
+    <ProjectReference Include="..\People.Infrastructure.Data\People.Infrastructure.Data.csproj">
       <Project>{b4151f22-cb7d-4a08-97ff-e77c3f009676}</Project>
-      <Name>People.Infrastucture.Data</Name>
+      <Name>People.Infrastructure.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -158,7 +154,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

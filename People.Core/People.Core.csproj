@@ -39,14 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IMapToNew.cs" />
     <Compile Include="Interfaces\IPeopleRepository.cs" />
     <Compile Include="Interfaces\IPeopleService.cs" />
     <Compile Include="Objects\Address.cs" />
-    <Compile Include="Objects\DateOfBirth.cs" />
+    <Compile Include="Objects\AddressType.cs" />
     <Compile Include="Objects\EmailAddress.cs" />
+    <Compile Include="Objects\EmailAddressType.cs" />
+    <Compile Include="Objects\GenderType.cs" />
+    <Compile Include="Objects\PersonWithHistory.cs" />
     <Compile Include="Objects\TelephoneNumber.cs" />
     <Compile Include="Objects\Name.cs" />
     <Compile Include="Objects\Person.cs" />
+    <Compile Include="Objects\TelephoneNumberType.cs" />
+    <Compile Include="Objects\TelephoneType.cs" />
+    <Compile Include="Objects\Title.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PeopleService.cs" />
   </ItemGroup>

@@ -14,49 +14,59 @@ namespace People.Core.Services
             _peopleRepository = peopleRepository;
         }
 
-        public Person GetPersonById(int id)
+        public Person GetPersonById(Guid id)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.GetById(id);
+        }
+
+        public PersonWithHistory GetPersonWithHistoryById(Guid id)
+        {
+            return _peopleRepository.GetWithAllHistoricsById(id);
         }
 
         public List<Person> GetPeople()
         {
-            throw new NotImplementedException();
+            return _peopleRepository.Get();
         }
 
         public List<Person> GetPeopleByPostcode(string postcode)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.GetByPostcode(postcode);
         }
 
         public List<Person> GetPeopleBySurname(string surname)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.GetBySurname(surname);
         }
 
         public List<Person> GetPeopleByEmail(string email)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.GetByEmail(email);
         }
 
         public List<Person> GetPeopleByMobile(string mobile)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.GetByMobile(mobile);
         }
 
         public bool CreatePerson(Person person)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.Create(person);
         }
 
-        public bool UpdatePerson(int id, Person person)
+        public bool UpdatePerson(Guid id, Person person)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.Update(id, person);
         }
 
-        public bool DeletePerson(int id)
+        public bool DeletePerson(Guid id)
         {
-            throw new NotImplementedException();
+            return _peopleRepository.Delete(id);
+        }
+
+        public bool BlacklistPerson(Guid id)
+        {
+            return _peopleRepository.Blacklist(id);
         }
     }
 }

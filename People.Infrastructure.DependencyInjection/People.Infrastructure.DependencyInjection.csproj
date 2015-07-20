@@ -77,9 +77,9 @@
       <Project>{0e158636-fb9e-4744-9a4e-e1cd34db5c36}</Project>
       <Name>People.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\People.Infrastucture.Data\People.Infrastucture.Data.csproj">
+    <ProjectReference Include="..\People.Infrastructure.Data\People.Infrastructure.Data.csproj">
       <Project>{B4151F22-CB7D-4A08-97FF-E77C3F009676}</Project>
-      <Name>People.Infrastucture.Data</Name>
+      <Name>People.Infrastructure.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

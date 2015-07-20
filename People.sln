@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastructure", "People.Infrastructure\People.Infrastructure.csproj", "{ADADD750-26AB-4874-B904-1EE62C362295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastucture.Data", "People.Infrastucture.Data\People.Infrastucture.Data.csproj", "{B4151F22-CB7D-4A08-97FF-E77C3F009676}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastructure.Data", "People.Infrastructure.Data\People.Infrastructure.Data.csproj", "{B4151F22-CB7D-4A08-97FF-E77C3F009676}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Infrastructure.DependencyInjection", "People.Infrastructure.DependencyInjection\People.Infrastructure.DependencyInjection.csproj", "{A3282397-46E4-43B5-81CB-9AAF75C93683}"
 EndProject

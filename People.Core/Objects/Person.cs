@@ -1,71 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace People.Core.Objects
 {
     public class Person
     {
         public int PersonId { get; set; }
-        public List<Name> Names { get; set; }
-        public List<DateOfBirth> DateOfBirths { get; set; }
-        public List<EmailAddress> Emails { get; set; }
-        public List<TelephoneNumber> Mobiles { get; set; }
-        public List<TelephoneNumber> Landlines { get; set; }
-        public List<Address> Addresses { get; set; }
+        public Guid PersonUid { get; set; }
+        public GenderType Gender { get; set; }
+        
+        public Name Name { get; set; }
+        public EmailAddress Email { get; set; }
+        public TelephoneNumber Mobile { get; set; }
+        public TelephoneNumber Landline { get; set; }
+        public Address Address { get; set; }
 
-        public Name CurrentName
-        {
-            get
-            {
-                var currentName = Names.FirstOrDefault(x => !x.Expired.HasValue);
-                return currentName ?? new Name();
-            }
-        }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime? DeathDate { get; set; }
+        public bool Blacklisted { get; set; }
 
-        public DateOfBirth  CurrentDateOfBirth
+        public Person()
         {
-            get
-            {
-                var currentDateOfBirth = DateOfBirths.FirstOrDefault(x => !x.Expired.HasValue);
-                return currentDateOfBirth ?? new DateOfBirth();
-            }
-        }
+            PersonId = 0;
+            PersonUid = Guid.Empty;
 
-        public EmailAddress CurrentEmailAddress
-        {
-            get
-            {
-                var currentEmailAddress = Emails.FirstOrDefault(x => !x.Expired.HasValue);
-                return currentEmailAddress ?? new EmailAddress();
-            }
-        }
+            Name = new Name();
+            Email = new EmailAddress();
+            Mobile = new TelephoneNumber();
+            Landline = new TelephoneNumber();
+            Address = new Address();
 
-        public TelephoneNumber CurrentMobile
-        {
-            get
-            {
-                var currentMobile = Mobiles.FirstOrDefault(x => !x.Expired.HasValue);
-                return currentMobile ?? new TelephoneNumber();
-            }
-        }
-
-        public TelephoneNumber  CurrentLandline
-        {
-            get
-            {
-                var currentLandline = Landlines.FirstOrDefault(x => !x.Expired.HasValue);
-                return CurrentLandline ?? new TelephoneNumber();
-            }
-        }
-
-        public Address CurrentAddress
-        {
-            get
-            {
-                var currentAddress = Addresses.FirstOrDefault(x => !x.Expired.HasValue);
-                return currentAddress ?? new Address();
-            }
+            DateOfBirth = DateTime.Now;
+            DeathDate = null;
+            Blacklisted = false;
         }
     }
 }

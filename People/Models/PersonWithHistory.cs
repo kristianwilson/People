@@ -5,7 +5,7 @@ using System.Web;
 
 namespace People.Models
 {
-    public class FullPerson
+    public class PersonWithHistory
     {
     }
 }

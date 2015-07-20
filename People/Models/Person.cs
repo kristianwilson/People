@@ -10,5 +10,6 @@ namespace People.Models
         public string Email { get; set; }
         public string Mobile { get; set; }
         public string Landline { get; set; }
+        public Address Address { get; set; }
     }
 }
